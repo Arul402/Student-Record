@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Student Details</title>
+   <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div id="parent1">
+    <h1>Student Form</h1>
+    <table>
+        
+        <tr>
+            <th>Name</th>
+            <td>
+                <input type="text" placeholder="Arul Prakasham M" id="name" />
+            </td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>
+                <input type="number" placeholder="21" id="age" />
+            </td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>
+                <input type="radio" id="male" name="gender" value="Male" class="gen"/>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" class="gen" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other" class="gen" />
+                <label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <th>Course</th>
+            <td>
+                <select name="course" >
+                    <option>None</option>
+                    <option>JavaScript</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>React Js</option>
+                    <option>Spring boot</option>
+                    <option>DBMS</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>
+                <input type="email" placeholder="arul@gmail.com" id="stem" /> 
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="add()">Save</button>
+            </td>
+        </tr>
+        
+    </table>
+
+</div>
+
+<div id="parent2" class="pt2">
+    <h1>Student Details</h1>
+    <table id="table">
+        <tr >
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Course</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <tr >
+            <td>Arul</td>
+            <td>21</td>
+            <td>Male</td>
+            <td>JavaScript</td>
+            <td>arul@gmail.com</td>
+            <td>
+                <button onclick="del(event)">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+    <script src="./myscript.js"></script>
+</body>
+</html>

@@ -5,14 +5,15 @@ var course=document.querySelector("select")
 var em=document.getElementById("stem")
 //for result
 var table=document.querySelector("#table")
-//For radio field
+
+function add(){
+    //For radio field
 var resultgen;
 for(var i=0;i<gen.length;i++){
     if(gen[i].checked){
         resultgen=gen[i].value
     }
 }
-function add(){
     var resname=stname.value
     var resage=stage.value
     var resgender=resultgen
@@ -31,7 +32,7 @@ function add(){
         alert("Enter the Email !!!")
     }else{
     var tr=document.createElement("tr")
-    tr.innerHTML="<tr><td>"+resname+"</td><td>"+resage+"</td><td>"+resgender+"</td><td>"+rescourse+"</td><td>"+resemail+"</td><td><button onclick='del(event)'>Delete</button></td>"
+    tr.innerHTML="<tr><td>"+resname+"</td><td>"+resage+"</td><td>"+resultgen+"</td><td>"+rescourse+"</td><td>"+resemail+"</td><td><button onclick='del(event)'>Delete</button></td>"
     table.append(tr)
     alert("Student Created !!!")
     }

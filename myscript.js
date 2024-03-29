@@ -5,13 +5,14 @@ var course=document.querySelector("select")
 var em=document.getElementById("stem")
 //for result
 var table=document.querySelector("#table")
-
 function add(){
     //For radio field
 var resultgen;
+let count=0;
 for(var i=0;i<gen.length;i++){
     if(gen[i].checked){
         resultgen=gen[i].value
+        count++;
     }
 }
     var resname=stname.value
@@ -24,7 +25,7 @@ for(var i=0;i<gen.length;i++){
         alert("Enter the Name !!!")
     }else if(resage==''){
         alert("Enter the Age !!!")
-    }else if(resultgen==''){
+    }else if(count==0){
         alert("Select the Gender !!!")
     }else if(rescourse=='None'){
         alert("Select the Course !!!")

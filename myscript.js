@@ -24,7 +24,7 @@ for(var i=0;i<gen.length;i++){
         alert("Enter the Name !!!")
     }else if(resage==''){
         alert("Enter the Age !!!")
-    }else if(resgender==''){
+    }else if(resultgen==''){
         alert("Select the Gender !!!")
     }else if(rescourse=='None'){
         alert("Select the Course !!!")

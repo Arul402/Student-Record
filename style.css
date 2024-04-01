@@ -1,7 +1,7 @@
 body{
     background-color: antiquewhite;
-    background-image: url("./image/school2.webp");
-    background-size:cover;
+/*     background-image: url("./image/school2.webp"); */
+/*     background-size:cover; */
 }
 table,tr,th,td{
     border: 1px solid;
